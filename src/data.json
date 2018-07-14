@@ -1,0 +1,130 @@
+[
+    {
+        "country": "AUD",
+        "title": "AUD - Australian Dollar"
+    },
+    {
+        "country":  "BGN",
+        "title": "BGN - Bulgarian Lev"
+    },
+    {
+        "country": "BRL",
+        "title": "BRL - Brazilian Real"
+    },
+    {
+        "country": "CAD",
+        "title": "CAD - Canadian Dollar"
+    },
+    {
+        "country": "CHF",
+        "title": "CHF - Swiss Franc"
+    },
+    {
+        "country": "CNY",
+        "title": "CNY - Chinese Yuan"
+    },
+    {
+        "country": "CZK",
+        "title": "CZK - Czech Koruna"
+    },
+    {
+        "country": "DKK",
+        "title": "DKK - Danish Krone"
+    },
+    {
+        "country": "GBP",
+        "title": "GBP - Pound sterling"
+    },
+    {
+        "country": "HKD",
+        "title": "Hong Kong Dollar"
+    },
+    {
+        "country": "HRK",
+        "title": "HRK - Croatian Kuna"
+    },
+    {
+        "country": "HUF",
+        "title": "Hungarian Forint"
+    },
+    {
+        "country": "IDR",
+        "title": "IDR - Indonesian Rupiah"
+    },
+    {
+        "country": "ILS",
+        "title": "ILS - Israeli New Shekel"
+    },
+    {
+        "country": "INR",
+        "title": "INR - Indian Rupee"
+    },
+    {
+        "country": "ISK",
+        "title": "Icelandic Króna"
+    },
+    {
+        "country": "JPY",
+        "title": "JPY - Japanese Yen"
+    },
+    {
+        "country": "KRW",
+        "title": "KRW - South Korean won"
+    },
+    {
+        "country": "MXN",
+        "title": "MXN - Mexican Peso"
+    },
+    {
+        "country": "MYR",
+        "title": "MYR - Malaysian Ringgit"
+    },
+    {
+        "country": "NOK",
+        "title": "NOK - Norwegian Krone"
+    },
+    {
+        "country": "NZD",
+        "title": "NZD - New Zealand Dollar"
+    },
+    {
+        "country": "PHP",
+        "title": "PHP - Philippine Piso"
+    },
+    {
+        "country": "PLN",
+        "title": "PLN - Poland złoty"
+    },
+    {
+        "country": "RON",
+        "title": "RON - Romanian Leu"
+    },
+    {
+        "country": "RUB",
+        "title": "RUB - Russian Ruble"
+    },
+    {
+        "country": "SEK",
+        "title": "SEK - Swedish Krona"
+    },
+    {
+        "country": "SGD",
+        "title": "SGD - Singapore Dollar"
+    },
+    {
+        "country": "THB",
+        "title": "THB - Thai Baht"
+    },
+    {
+        "country": "TRY",
+        "title": "TRY - Turkish lira"
+    },
+    {
+        "country": "USD",
+        "title": "USD - United States Dollar"
+    },
+    {
+        "country": "ZAR",
+        "title": "ZAR - South African Rand"
+    }
+]
