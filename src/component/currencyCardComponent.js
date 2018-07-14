@@ -27,7 +27,6 @@ export default class currencyCardComponent extends React.Component {
 
     }
 
-
     render() {
         var json = this.state.currency;
         var arr = [];
@@ -57,8 +56,5 @@ export default class currencyCardComponent extends React.Component {
                 
             })
         );
-
     }
-
-
 }

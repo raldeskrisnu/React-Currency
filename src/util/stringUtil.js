@@ -4,7 +4,7 @@ function StringUtil(text){
        
         let fixedNumber = text.toFixed(2).toString();
         fixedNumber = fixedNumber.replace(".", ",");
-        return fixedNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");;
+        return fixedNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
         
     }
 }
