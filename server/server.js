@@ -9,6 +9,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/api/currencylatest', function (req, res) {
     
+    console.log(process.env.API_PROTOCOL);
     axios.get(url)
         .then(function (response) {
             return res.send(response.data);

@@ -31,7 +31,7 @@ export default class currencyCardComponent extends React.Component {
     handledelTodoItem(v){   
         
         for(var i = 0; i < Data.length; i++){
-          if(Data[i].country == v){
+          if(Data[i].country === v){
             delete Data[i].country;
             console.log(Data[i])
           }
@@ -39,6 +39,8 @@ export default class currencyCardComponent extends React.Component {
       }
 
     render() {
+        const sdsd = process.env.API_PROTOCOL;
+        console.log(sdsd);
         var json = this.state.currency;
         var arr = [];
         Object.keys(json).forEach(function(key) {
