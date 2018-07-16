@@ -3,7 +3,7 @@ import axios from 'axios';;
 const getCurrency={
   getData: () => {
 
-    return axios.get('http://localhost:8080/api/basecurrency/USD', {
+    return axios.get(process.env.REACT_APP_ENDPOINT, {
     }).then((response) => {
       return response;
     })

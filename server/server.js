@@ -3,13 +3,13 @@ const bodyParser = require('body-parser')
 const path = require('path');
 const app = express();
 const axios = require('axios');
+const ip = require('ip');
 const url = 'https://exchangeratesapi.io/api/latest';
 
 app.use(express.static(path.join(__dirname, 'build')));
-
+console.log("========> IP ADDRESS <======");
+console.log(ip.address());
 app.get('/api/currencylatest', function (req, res) {
-    
-    console.log(process.env.API_PROTOCOL);
     axios.get(url)
         .then(function (response) {
             return res.send(response.data);

@@ -39,8 +39,6 @@ export default class currencyCardComponent extends React.Component {
       }
 
     render() {
-        const sdsd = process.env.API_PROTOCOL;
-        console.log(sdsd);
         var json = this.state.currency;
         var arr = [];
         Object.keys(json).forEach(function(key) {
