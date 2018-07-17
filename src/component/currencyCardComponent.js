@@ -35,9 +35,9 @@ export default class currencyCardComponent extends React.Component {
     }
    
     handleButtonRemoveItem(v){
-        for(let i = 0; i < this.state.filters.length; i++){
-          if(this.state.filters[i].country === v){
-            delete this.state.filters[i].country;
+        for(let i = 0; i < Data.length; i++){
+          if(Data[i].country === v){
+            delete Data[i].country;
           }
         }
     }
@@ -49,7 +49,7 @@ export default class currencyCardComponent extends React.Component {
             arr.push(json[key]);
           });
         
-        this.state.filterCurrency = Data.filter(
+        this.state.filterCurrency === Data.filter(
             (obj) => {
                 if (this.state.search.length === 3) {
                     return obj.country === this.state.search;
