@@ -49,7 +49,7 @@ export default class currencyCardComponent extends React.Component {
             arr.push(json[key]);
           });
         
-        this.state.filterCurrency === Data.filter(
+        this.state.filterCurrency = Data.filter(
             (obj) => {
                 if (this.state.search.length === 3) {
                     return obj.country === this.state.search;
