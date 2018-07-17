@@ -1,16 +1,18 @@
 import React from 'react';
 import stringUtil from '../util/stringUtil';
 import getUsdService from '../services/apiController';
-import {Panel} from 'react-bootstrap';
+import { Panel, FormControl, Button } from 'react-bootstrap';
 import Data from '../data.json'
 export default class currencyCardComponent extends React.Component {
 
     constructor(props){
         super(props)
         this.state = {
-            currency: []
+            currency: [],
+            search: '',
+            filterCurrency:[]
         }
-        this.handledelTodoItem = this.handledelTodoItem.bind(this);
+        this.handleButtonRemoveItem = this.handleButtonRemoveItem.bind(this);
     }
 
     componentDidMount(){
@@ -27,33 +29,48 @@ export default class currencyCardComponent extends React.Component {
       })
 
     }
+     
+    updateSearch(event){
+        this.setState({search:event.target.value.toUpperCase()})
+    }
    
-    handledelTodoItem(v){   
-        
-        for(var i = 0; i < Data.length; i++){
-          if(Data[i].country === v){
-            delete Data[i].country;
-            console.log(Data[i])
+    handleButtonRemoveItem(v){
+        for(let i = 0; i < this.state.filters.length; i++){
+          if(this.state.filters[i].country === v){
+            delete this.state.filters[i].country;
           }
         }
-      }
+    }
 
     render() {
-        var json = this.state.currency;
-        var arr = [];
+        let json = this.state.currency;
+        let arr = [];
         Object.keys(json).forEach(function(key) {
             arr.push(json[key]);
           });
+        
+        this.state.filterCurrency = Data.filter(
+            (obj) => {
+                if (this.state.search.length === 3) {
+                    return obj.country === this.state.search;
+                } else {
+                    return obj.country;
+                }
+
+            }
+        );
+          
         return (
-            Data.map((obj,key) => (
+            <div> {
+                this.state.filterCurrency.map((obj,key) => (
                 <div key={key}>
                     <Panel>
                         <Panel.Heading>
                             {obj.title}
-                           
+
                             <div className="pull-right">
                             {
-                                <button className="btn btn-sm" onClick = {this.handledelTodoItem.bind(this, obj.country)}><i className="glyphicon glyphicon-remove"></i></button>
+                                <Button className="btn btn-sm" onClick = {this.handleButtonRemoveItem.bind(this, obj.country)}><i className="glyphicon glyphicon-remove"></i></Button>
                             }
                                
                             </div>
@@ -66,8 +83,13 @@ export default class currencyCardComponent extends React.Component {
                         </Panel.Body>
                         
                     </Panel>
+                    
                 </div>
+                
             ))
+        }
+        <FormControl type="text" name="searchTxt" value={this.state.search} placeholder="Search" onChange={this.updateSearch.bind(this)} maxLength="3"/>
+            </div>
         );
     }
 }

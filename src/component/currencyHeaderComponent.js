@@ -13,7 +13,6 @@ export default class currencyHeaderComponent extends React.Component {
 
     componentDidMount(){
         getUsdService.getData().then((res)=>{
-           // console.log(res);
             this.setState(() => {
                 return {
                   currency: res.data
