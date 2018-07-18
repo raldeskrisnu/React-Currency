@@ -20,7 +20,7 @@ app.get('/api/currencylatest', function (req, res) {
 });
 
 app.get('/api/basecurrency/:id', function (req, res) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.header("Access-Control-Allow-Origin", process.env.REACT_APP_ENDPOINT);
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     axios.get(url +'?base='+req.params.id)
         .then(function (response) {
