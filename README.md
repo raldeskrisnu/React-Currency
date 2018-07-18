@@ -23,7 +23,7 @@ clone this project git clone https://github.com/raldeskrisnu/React-Currency.git
 1. Method GET : http://localhost:8080/api/currencylatest/
 2. Method GET : http://localhost:8080/api/basecurrency/USD
 
-** live
+**live**
 1. https://react-currency-server.herokuapp.com/api/currencylatest/
 2. https://react-currency-server.herokuapp.com/api/basecurrency/USD/
 
