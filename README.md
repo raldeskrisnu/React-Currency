@@ -21,7 +21,11 @@ clone this project git clone https://github.com/raldeskrisnu/React-Currency.git
 
 ## list endpoint
 1. Method GET : http://localhost:8080/api/currencylatest/
-2. Method POST : http://localhost:8080/api/basecurrency/USD
+2. Method GET : http://localhost:8080/api/basecurrency/USD
+
+** live
+1. https://react-currency-server.herokuapp.com/api/currencylatest/
+2. https://react-currency-server.herokuapp.com/api/basecurrency/USD/
 
 ## Running in local
 Frontend : sh local-frontend.sh
